@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(51, 48, 48);
+
+  h3 {
+    font-size: 40px;
+    a {
+      font-family: "Open Sans Condensed", sans-serif;
+      letter-spacing: 3px;
+      color: #ffffff;
+      text-decoration: none;
+      transition: 1s;
+      &:hover {
+        opacity: 0.8;
+        color: #2dd690;
+        cursor: pointer;
+      }
+    }
+  }
+  .navigation {
+    position: fixed;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation-duration: 7s;
+    animation-name: opacity;
+    img {
+      margin-left: 40px;
+      width: 30px;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+        width: 31px;
+      }
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      a {
+        font-family: "Montserrat", sans-serif;
+        margin-left: 40px;
+        font-size: 20px;
+        color: #ffffff;
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 1.1px;
+        &:hover {
+          opacity: 0.6;
+        }
+        &::after {
+          content: "";
+          width: 0%;
+          height: 2px;
+          background: #2dd690;
+          position: absolute;
+          bottom: -20%;
+          left: 0%;
+          border-radius: 10px;
+          transition: all 0.7s;
+        }
+        &:hover::after {
+          left: 0%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////CONTENT
+.content {
+  padding: 15% 10% 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  background-color: rgb(51, 48, 48);
+  h2 {
+    color: #dadada;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    opacity: 0.1;
+    font-size: 135px;
+    letter-spacing: 15px;
+    animation-duration: 2.5s;
+    animation-name: slideinL;
+  }
+  .boxL {
+    max-width: 650px;
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 40px;
+      color: #cac9c9;
+      font-weight: lighter;
+      margin-bottom: 40px;
+      letter-spacing: 10px;
+      animation-duration: 3s;
+      animation-name: slideinL;
+      strong {
+        color: #2dd690;
+        font-family: "Oswald", sans-serif;
+        font-size: 50px;
+      }
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 22px;
+      color: #cac9c9;
+      animation-duration: 3.5s;
+      animation-name: slideinL;
+    }
+  }
+  img {
+    max-width: 500px;
+    margin-left: 100px;
+
+    opacity: 0.6;
+    animation-duration: 3.5s;
+    animation-name: slideinR;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideinL {
+  from {
+    margin-left: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideinR {
+  from {
+    margin-left: -100%;
+    width: 100px;
+
+    opacity: 0;
+  }
+
+  to {
+    width: 550px;
+  }
+}
+
+////////////////////////////////////////////////////MY WORK
+.workCont {
+  height: 100vh;
+
+  background: linear-gradient(
+    177deg,
+    rgb(201, 201, 201) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  h2 {
+    width: fit-content;
+    color: #252525;
+    position: relative;
+    z-index: 0;
+    top: -53%;
+    left: 20%;
+    opacity: 0.3;
+    font-size: 135px;
+    letter-spacing: 15px;
+  }
+  .project {
+    padding-top: 5%;
+    position: relative;
+    height: 400px;
+    z-index: 1;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+      font-size: 40px;
+      font-family: "Oswald", sans-serif;
+      color: #353535;
+      margin-bottom: 15px;
+    }
+    img {
+      width: 250px;
+    }
+    .pro1 {
+      width: 300px;
+      img {
+        height: 500px;
+        transition: 1s;
+        &:hover {
+          opacity: 0.8;
+          height: 520px;
+          width: 270px;
+        }
+      }
+    }
+    .pro2 {
+      width: 300px;
+      img {
+        height: 520px;
+        transition: 1s;
+        &:hover {
+          opacity: 0.8;
+          width: 270px;
+          height: 540px;
+        }
+      }
+    }
+    .pro3 {
+      width: 300px;
+      img {
+        height: 540px;
+        transition: 1s;
+        &:hover {
+          opacity: 0.8;
+          height: 560px;
+          width: 270px;
+        }
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////CONTENT
+.contactCont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 110vh;
+  background-color: rgb(51, 48, 48);
+  h1 {
+    width: fit-content;
+    color: #ebebeb;
+    position: absolute;
+    z-index: 0;
+    top: 210%;
+    left: 40%;
+    opacity: 0.3;
+    font-size: 135px;
+    letter-spacing: 15px;
+  }
+  .contL {
+    margin-top: 20%;
+    margin-left: 10%;
+    z-index: 2;
+    h2 {
+      font-size: 80px;
+
+      color: #2dd690;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      margin-left: 11%;
+      input {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-size: 16px;
+        height: 30px;
+        width: 400px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        background-color: #353535;
+        border: 1px solid #2dd690;
+        color: #ffffff;
+      }
+      button {
+        width: 400px;
+        height: 50px;
+        background-color: #2dd690;
+        border: none;
+        font-size: 18px;
+        border-radius: 25px;
+        transition: 1s;
+        cursor: pointer;
+        &:hover {
+          width: 440px;
+        }
+      }
+      textarea {
+        width: 400px;
+        background-color: #353535;
+        border: 1px solid #2dd690;
+        margin-bottom: 20px;
+        font-size: 16px;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        color: #ffffff;
+      }
+    }
+  }
+  .contR {
+    img {
+      width: 50px;
+      margin: 15px 0;
+      &:hover {
+        opacity: 0.6;
+        width: 53px;
+      }
+    }
+    .social {
+      margin-top: 33%;
+      display: flex;
+      flex-direction: column;
+      .soc {
+        display: flex;
+        align-items: center;
+        p {
+          margin-left: 35px;
+          font-size: 27px;
+          color: #f0f0f0;
+          border-bottom: 1px solid #cac9c9;
+          letter-spacing: 4px;
+        }
+      }
+    }
+  }
+}
