@@ -242,10 +242,10 @@ header .navigation ul a:hover::after {
   width: -moz-fit-content;
   width: fit-content;
   color: #252525;
-  position: relative;
+  position: absolute;
   z-index: 0;
-  top: -53%;
-  left: 20%;
+  top: 107%;
+  left: 25%;
   opacity: 0.3;
   font-size: 135px;
   letter-spacing: 15px;
@@ -342,7 +342,7 @@ header .navigation ul a:hover::after {
   position: absolute;
   z-index: 0;
   top: 210%;
-  left: 40%;
+  left: 50%;
   opacity: 0.3;
   font-size: 135px;
   letter-spacing: 15px;
