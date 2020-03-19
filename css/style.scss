@@ -248,7 +248,7 @@ header {
 .contactCont {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 110vh;
+  min-height: 100vh;
   background-color: rgb(51, 48, 48);
   h1 {
     width: fit-content;
@@ -256,7 +256,7 @@ header {
     position: absolute;
     z-index: 0;
     top: 210%;
-    left: 50%;
+    right: 25%;
     opacity: 0.3;
     font-size: 135px;
     letter-spacing: 15px;
@@ -334,6 +334,164 @@ header {
           color: #f0f0f0;
           border-bottom: 1px solid #cac9c9;
           letter-spacing: 4px;
+        }
+      }
+    }
+  }
+}
+
+//MEDIA QUERY
+@media only screen and (max-width: 1240px) {
+  ////////////////////////////ABOUT ME
+  .content {
+    padding-top: 27%;
+    img {
+      margin: 140px 0 0 0;
+      width: 400px;
+    }
+    h2 {
+      top: 20%;
+      left: 8%;
+    }
+    .boxL {
+      width: 500px;
+      h1 {
+        font-size: 30px;
+        strong {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  ////////////////////////////MY WORK
+  .workCont {
+    h2 {
+      left: 8%;
+    }
+    .project {
+      padding-top: 180px;
+      text-align: center;
+      img {
+        width: 170px;
+        max-height: 350px;
+      }
+    }
+  }
+
+  ////////////////////////////CONTACT
+  .contactCont {
+    h1 {
+      left: 8%;
+    }
+    .contL {
+      h2 {
+        margin-top: 100px;
+        font-size: 60px;
+      }
+    }
+    .contR {
+      margin: 140px 0 0 70px;
+      img {
+        width: 35px;
+      }
+    }
+    .social {
+      .soc {
+        p {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  @keyframes slideinR {
+    from {
+      margin-left: -100%;
+      width: 100px;
+
+      opacity: 0;
+    }
+
+    to {
+      width: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  ////////////////////////////ABOUT ME
+  .content {
+    padding-top: 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    img {
+      margin: auto;
+      width: 400px;
+    }
+    h2 {
+      font-size: 105px;
+      top: 35%;
+      left: 8%;
+    }
+    .boxL {
+      width: 500px;
+      h1 {
+        font-size: 30px;
+        strong {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  ////////////////////////////MY WORK
+  .workCont {
+    h2 {
+      left: 8%;
+      font-size: 105px;
+    }
+    .project {
+      padding-top: 180px;
+      text-align: center;
+      img {
+        width: 150px;
+        max-height: 340px;
+      }
+    }
+  }
+
+  ////////////////////////////CONTACT
+  .contactCont {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    h1 {
+      margin: 0;
+      top: 200%;
+      left: 8%;
+      font-size: 105px;
+    }
+    .contL {
+      padding: 0;
+      margin: 0 0 0 18%;
+      h2 {
+        margin-left: 8%;
+        font-size: 60px;
+      }
+    }
+    .contR {
+      margin: 0;
+      img {
+        width: 30px;
+      }
+      .social {
+        margin: 5% 0 0 35%;
+        .soc {
+          p {
+            font-size: 20px;
+          }
         }
       }
     }

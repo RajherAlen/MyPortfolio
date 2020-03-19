@@ -330,7 +330,7 @@ header .navigation ul a:hover::after {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  height: 110vh;
+  min-height: 100vh;
   background-color: #333030;
 }
 
@@ -342,7 +342,7 @@ header .navigation ul a:hover::after {
   position: absolute;
   z-index: 0;
   top: 210%;
-  left: 50%;
+  right: 25%;
   opacity: 0.3;
   font-size: 135px;
   letter-spacing: 15px;
@@ -447,5 +447,147 @@ header .navigation ul a:hover::after {
   color: #f0f0f0;
   border-bottom: 1px solid #cac9c9;
   letter-spacing: 4px;
+}
+
+@media only screen and (max-width: 1240px) {
+  .content {
+    padding-top: 27%;
+  }
+  .content img {
+    margin: 140px 0 0 0;
+    width: 400px;
+  }
+  .content h2 {
+    top: 20%;
+    left: 8%;
+  }
+  .content .boxL {
+    width: 500px;
+  }
+  .content .boxL h1 {
+    font-size: 30px;
+  }
+  .content .boxL h1 strong {
+    font-size: 30px;
+  }
+  .workCont h2 {
+    left: 8%;
+  }
+  .workCont .project {
+    padding-top: 180px;
+    text-align: center;
+  }
+  .workCont .project img {
+    width: 170px;
+    max-height: 350px;
+  }
+  .contactCont h1 {
+    left: 8%;
+  }
+  .contactCont .contL h2 {
+    margin-top: 100px;
+    font-size: 60px;
+  }
+  .contactCont .contR {
+    margin: 140px 0 0 70px;
+  }
+  .contactCont .contR img {
+    width: 35px;
+  }
+  .contactCont .social .soc p {
+    font-size: 25px;
+  }
+  @-webkit-keyframes slideinR {
+    from {
+      margin-left: -100%;
+      width: 100px;
+      opacity: 0;
+    }
+    to {
+      width: 400px;
+    }
+  }
+  @keyframes slideinR {
+    from {
+      margin-left: -100%;
+      width: 100px;
+      opacity: 0;
+    }
+    to {
+      width: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    padding-top: 20%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .content img {
+    margin: auto;
+    width: 400px;
+  }
+  .content h2 {
+    font-size: 105px;
+    top: 35%;
+    left: 8%;
+  }
+  .content .boxL {
+    width: 500px;
+  }
+  .content .boxL h1 {
+    font-size: 30px;
+  }
+  .content .boxL h1 strong {
+    font-size: 30px;
+  }
+  .workCont h2 {
+    left: 8%;
+    font-size: 105px;
+  }
+  .workCont .project {
+    padding-top: 180px;
+    text-align: center;
+  }
+  .workCont .project img {
+    width: 150px;
+    max-height: 340px;
+  }
+  .contactCont {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contactCont h1 {
+    margin: 0;
+    top: 200%;
+    left: 8%;
+    font-size: 105px;
+  }
+  .contactCont .contL {
+    padding: 0;
+    margin: 0 0 0 18%;
+  }
+  .contactCont .contL h2 {
+    margin-left: 8%;
+    font-size: 60px;
+  }
+  .contactCont .contR {
+    margin: 0;
+  }
+  .contactCont .contR img {
+    width: 30px;
+  }
+  .contactCont .contR .social {
+    margin: 5% 0 0 35%;
+  }
+  .contactCont .contR .social .soc p {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
