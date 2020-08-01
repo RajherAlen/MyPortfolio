@@ -374,6 +374,8 @@ header .navigation ul a:hover::after {
 .contactCont .contR img {
   width: 50px;
   margin: 15px 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .contactCont .contR img:hover {
@@ -562,7 +564,12 @@ header .navigation ul a:hover::after {
 
 @media only screen and (max-width: 428px) {
   .navigation .gitHub {
-    display: none;
+    position: absolute;
+    top: 20%;
+    right: -4%;
+  }
+  .navigation .gitHub img {
+    width: 20px;
   }
   .navigation h3 {
     font-size: 20px;
@@ -572,6 +579,142 @@ header .navigation ul a:hover::after {
     position: absolute;
     top: 5px;
     margin-left: 30px;
+  }
+  .navigation nav li a {
+    font-size: 13px;
+    margin: 0 10px;
+  }
+  .content {
+    width: 100vw;
+    padding-top: 30%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .content img {
+    margin-left: -10px;
+    width: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-top: -100px;
+  }
+  .content h2 {
+    font-size: 70px;
+    top: 3%;
+    left: 3%;
+  }
+  .content .boxL {
+    width: 400px;
+    padding-right: 30px;
+  }
+  .content .boxL p {
+    margin-left: -10px;
+  }
+  .content .boxL h1 {
+    font-size: 26px;
+  }
+  .content .boxL h1 strong {
+    font-size: 30px;
+  }
+  .workCont {
+    min-height: 1600px;
+  }
+  .workCont h2 {
+    left: 8%;
+    font-size: 70px;
+    width: 80%;
+  }
+  .workCont .project {
+    padding-top: 180px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding-top: 170px;
+  }
+  .workCont .project img {
+    width: 350px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .contactCont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contactCont h1 {
+    top: 312%;
+    width: 90vw;
+    font-size: 57px;
+  }
+  .contactCont .contL {
+    padding: 0;
+    margin: 0 20px;
+    margin-left: 10%;
+    max-width: 100vw;
+  }
+  .contactCont .contL h2 {
+    margin-left: 20%;
+    font-size: 30px;
+  }
+  .contactCont .contL form {
+    width: 350px;
+  }
+  .contactCont .contL form input {
+    width: 350px;
+  }
+  .contactCont .contL form button {
+    width: 350px;
+  }
+  .contactCont .contL form textarea {
+    width: 350px;
+  }
+  .contactCont .contR {
+    margin: 0;
+  }
+  .contactCont .contR img {
+    width: 20px;
+  }
+  .contactCont .contR .social {
+    margin: 5% 0 0 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contactCont .contR .social .soc p {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .navigation .gitHub {
+    position: absolute;
+    top: 20%;
+    right: -7%;
+  }
+  .navigation .gitHub img {
+    width: 20px;
+  }
+  .navigation h3 {
+    font-size: 20px;
+    margin-left: -30px;
+  }
+  .navigation nav {
+    position: absolute;
+    top: 5px;
+    margin-left: 0px;
   }
   .navigation nav li a {
     font-size: 13px;

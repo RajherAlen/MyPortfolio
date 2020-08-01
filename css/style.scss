@@ -288,6 +288,7 @@ header {
     img {
       width: 50px;
       margin: 15px 0;
+      transition: all 0.4s;
       &:hover {
         opacity: 0.6;
         width: 53px;
@@ -481,7 +482,12 @@ header {
 
   .navigation {
     .gitHub {
-      display: none;
+      position: absolute;
+      top: 20%;
+      right: -4%;
+      img {
+        width: 20px;
+      }
     }
     h3 {
       font-size: 20px;
@@ -491,6 +497,143 @@ header {
       position: absolute;
       top: 5px;
       margin-left: 30px;
+      li a {
+        font-size: 13px;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .content {
+    width: 100vw;
+    padding-top: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    img {
+      margin-left: -10px;
+      width: 300px;
+      object-fit: contain;
+      margin-top: -100px;
+    }
+    h2 {
+      font-size: 70px;
+      top: 3%;
+      left: 3%;
+    }
+    .boxL {
+      width: 400px;
+      padding-right: 30px;
+      p {
+        margin-left: -10px;
+      }
+      h1 {
+        font-size: 26px;
+        strong {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  ////////////////////////////MY WORK
+  .workCont {
+    min-height: 1600px;
+
+    h2 {
+      left: 8%;
+      font-size: 70px;
+      width: 80%;
+    }
+    .project {
+      padding-top: 180px;
+      text-align: center;
+      width: 100%;
+      margin: auto;
+      grid-template-columns: repeat(1, 1fr);
+      padding-top: 170px;
+
+      img {
+        width: 350px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  ////////////////////////////CONTACT
+  .contactCont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    h1 {
+      top: 312%;
+      width: 90vw;
+      font-size: 57px;
+    }
+    .contL {
+      padding: 0;
+      margin: 0 20px;
+      margin-left: 10%;
+      max-width: 100vw;
+      h2 {
+        margin-left: 20%;
+        font-size: 30px;
+      }
+      form {
+        width: 350px;
+        input {
+          width: 350px;
+        }
+        button {
+          width: 350px;
+        }
+        textarea {
+          width: 350px;
+        }
+      }
+    }
+    .contR {
+      margin: 0;
+      img {
+        width: 20px;
+      }
+      .social {
+        margin: 5% 0 0 20%;
+        display: flex;
+        align-items: flex-start;
+
+        .soc {
+          p {
+            margin-left: 10px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  ////////////////////////////ABOUT ME
+
+  .navigation {
+    .gitHub {
+      position: absolute;
+      top: 20%;
+      right: -7%;
+      img {
+        width: 20px;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      margin-left: -30px;
+    }
+    nav {
+      position: absolute;
+      top: 5px;
+      margin-left: 0px;
       li a {
         font-size: 13px;
         margin: 0 10px;
