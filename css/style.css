@@ -217,7 +217,7 @@ header .navigation ul a:hover::after {
     opacity: 0;
   }
   to {
-    width: 550px;
+    width: 450px;
   }
 }
 
@@ -228,7 +228,7 @@ header .navigation ul a:hover::after {
     opacity: 0;
   }
   to {
-    width: 550px;
+    width: 450px;
   }
 }
 
@@ -565,60 +565,73 @@ header .navigation ul a:hover::after {
     display: none;
   }
   .navigation h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin-left: -30px;
   }
   .navigation nav {
-    margin-left: -30px;
+    position: absolute;
+    top: 5px;
+    margin-left: 30px;
   }
   .navigation nav li a {
-    font-size: 14px;
+    font-size: 13px;
+    margin: 0 10px;
   }
   .content {
     width: 100vw;
-    padding-top: 20%;
+    padding-top: 30%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   .content img {
-    margin: auto;
-    width: 330px;
+    margin-left: -10px;
+    width: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-top: -100px;
   }
   .content h2 {
-    font-size: 90px;
+    font-size: 70px;
     top: 3%;
-    left: 8%;
+    left: 3%;
   }
   .content .boxL {
-    width: 350px;
-    padding-right: 20px;
+    width: 330px;
+    padding-right: 30px;
+  }
+  .content .boxL p {
+    margin-left: -10px;
   }
   .content .boxL h1 {
-    font-size: 25px;
+    font-size: 22px;
   }
   .content .boxL h1 strong {
     font-size: 30px;
   }
   .workCont {
-    min-height: 1600px;
+    min-height: 1400px;
   }
   .workCont h2 {
     left: 8%;
-    font-size: 90px;
+    font-size: 70px;
     width: 80%;
   }
   .workCont .project {
     padding-top: 180px;
     text-align: center;
+    width: 100%;
+    margin: auto;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    padding-top: 220px;
+    padding-top: 170px;
   }
   .workCont .project img {
-    width: 330px;
+    width: 250px;
     max-height: 340px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .contactCont {
     display: -webkit-box;
@@ -632,30 +645,51 @@ header .navigation ul a:hover::after {
     margin: 0 auto;
   }
   .contactCont h1 {
-    margin: 0;
-    top: 320%;
+    top: 280%;
     width: 90vw;
-    font-size: 57px;
+    font-size: 45px;
   }
   .contactCont .contL {
     padding: 0;
     margin: 0 20px;
+    margin-left: 10%;
+    max-width: 100vw;
   }
   .contactCont .contL h2 {
-    margin-left: 8%;
-    font-size: 40px;
+    margin-left: 15%;
+    font-size: 30px;
+  }
+  .contactCont .contL form {
+    margin-left: 0px;
+    width: 340px;
+  }
+  .contactCont .contL form input {
+    width: 300px;
+  }
+  .contactCont .contL form button {
+    width: 300px;
+  }
+  .contactCont .contL form textarea {
+    width: 300px;
   }
   .contactCont .contR {
     margin: 0;
   }
   .contactCont .contR img {
-    width: 30px;
+    width: 20px;
   }
   .contactCont .contR .social {
-    margin: 5% 0 0 5%;
+    margin: 5% 0 0 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .contactCont .contR .social .soc p {
-    font-size: 20px;
+    margin-left: 10px;
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
