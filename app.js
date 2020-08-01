@@ -1,3 +1,54 @@
+// MAIL
+require("dotenv").config();
+const nodemailer = require("nodemailer");
+// const express = require("express");
+// const bodyParser = require("body-parser");
+// const exphbs = require("express-handlebars");
+
+// const app = express();
+
+// app.get("/", (req, res) => {
+//   res.send("Hello");
+// });
+
+// app.listen(8080, () => console.log("server started..."));
+
+let userName = document.querySelector(".user_email");
+let userText = document.querySelector(".user_text");
+
+// Step 1
+let transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.EMAIL,
+    pass: process.env.PASSWORD,
+  },
+});
+
+// Step 2 Mail option
+let mailOption = {
+  from: userName,
+  to: "armortivore10@gmail.com",
+  subject: "Helloo testing 1",
+  text: userText,
+};
+
+// Step 3
+transporter.sendMail(mailOption, function () {
+  if (err) {
+    console.log("error");
+  } else {
+    console.log("email sent");
+  }
+});
+
+//
+//
+//
+//
+//
+//
+
 //Smooth Scroll   (Easing Equations)
 
 function smoothScroll(target, duration) {
@@ -26,18 +77,18 @@ function smoothScroll(target, duration) {
 
 var sec1 = document.querySelector(".sec1");
 
-sec1.addEventListener("click", function() {
+sec1.addEventListener("click", function () {
   smoothScroll("#aboutMe", 1500);
 });
 
 var sec2 = document.querySelector(".sec2");
 
-sec2.addEventListener("click", function() {
+sec2.addEventListener("click", function () {
   smoothScroll("#myWork", 1500);
 });
 
 var sec3 = document.querySelector(".sec3");
 
-sec3.addEventListener("click", function() {
+sec3.addEventListener("click", function () {
   smoothScroll("#contact", 1500);
 });
