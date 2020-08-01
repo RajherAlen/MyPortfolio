@@ -159,7 +159,7 @@ header .navigation ul a:hover::after {
 }
 
 .content img {
-  max-width: 500px;
+  width: 400px;
   margin-left: 100px;
   opacity: 0.6;
   -webkit-animation-duration: 3.5s;
@@ -274,7 +274,7 @@ header .navigation ul a:hover::after {
 
 .workCont .project img {
   width: 350px;
-  height: 250px;
+  max-height: 250px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
@@ -414,8 +414,8 @@ header .navigation ul a:hover::after {
     padding-top: 27%;
   }
   .content img {
-    margin: 140px 0 0 0;
-    width: 400px;
+    margin: 14px 0 0 0;
+    width: 350px;
   }
   .content h2 {
     top: 20%;
@@ -434,22 +434,27 @@ header .navigation ul a:hover::after {
     left: 8%;
   }
   .workCont .project {
-    padding-top: 180px;
+    padding-top: 120px;
     text-align: center;
   }
+  .workCont .project h4 {
+    font-size: 30px;
+  }
   .workCont .project img {
-    width: 170px;
-    max-height: 350px;
+    width: 250px;
   }
   .contactCont h1 {
     left: 8%;
   }
   .contactCont .contL h2 {
-    margin-top: 100px;
-    font-size: 60px;
+    margin-top: 140px;
+    font-size: 50px;
+  }
+  .contactCont .contL form {
+    margin-left: -10px;
   }
   .contactCont .contR {
-    margin: 140px 0 0 70px;
+    margin: 140px 20px 0 20px;
   }
   .contactCont .contR img {
     width: 35px;
@@ -464,7 +469,7 @@ header .navigation ul a:hover::after {
       opacity: 0;
     }
     to {
-      width: 400px;
+      max-width: 400px;
     }
   }
   @keyframes slideinR {
@@ -474,7 +479,7 @@ header .navigation ul a:hover::after {
       opacity: 0;
     }
     to {
-      width: 400px;
+      max-width: 400px;
     }
   }
 }
@@ -492,8 +497,8 @@ header .navigation ul a:hover::after {
     width: 400px;
   }
   .content h2 {
-    font-size: 105px;
-    top: 35%;
+    font-size: 100px;
+    top: 7%;
     left: 8%;
   }
   .content .boxL {
@@ -518,24 +523,28 @@ header .navigation ul a:hover::after {
     max-height: 340px;
   }
   .contactCont {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
   }
   .contactCont h1 {
     margin: 0;
     top: 200%;
-    left: 8%;
     font-size: 105px;
   }
   .contactCont .contL {
     padding: 0;
-    margin: 0 0 0 18%;
+    margin: 0 0 0 25%;
   }
   .contactCont .contL h2 {
     margin-left: 8%;
-    font-size: 60px;
+    font-size: 40px;
   }
   .contactCont .contR {
     margin: 0;
@@ -544,7 +553,106 @@ header .navigation ul a:hover::after {
     width: 30px;
   }
   .contactCont .contR .social {
-    margin: 5% 0 0 35%;
+    margin: 5% 0 0 25%;
+  }
+  .contactCont .contR .social .soc p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .navigation .gitHub {
+    display: none;
+  }
+  .navigation h3 {
+    font-size: 22px;
+    margin-left: -30px;
+  }
+  .navigation nav {
+    margin-left: -30px;
+  }
+  .navigation nav li a {
+    font-size: 14px;
+  }
+  .content {
+    width: 100vw;
+    padding-top: 20%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .content img {
+    margin: auto;
+    width: 330px;
+  }
+  .content h2 {
+    font-size: 90px;
+    top: 3%;
+    left: 8%;
+  }
+  .content .boxL {
+    width: 350px;
+    padding-right: 20px;
+  }
+  .content .boxL h1 {
+    font-size: 25px;
+  }
+  .content .boxL h1 strong {
+    font-size: 30px;
+  }
+  .workCont {
+    min-height: 1600px;
+  }
+  .workCont h2 {
+    left: 8%;
+    font-size: 90px;
+    width: 80%;
+  }
+  .workCont .project {
+    padding-top: 180px;
+    text-align: center;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding-top: 220px;
+  }
+  .workCont .project img {
+    width: 330px;
+    max-height: 340px;
+  }
+  .contactCont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contactCont h1 {
+    margin: 0;
+    top: 310%;
+    width: 90vw;
+    font-size: 57px;
+  }
+  .contactCont .contL {
+    padding: 0;
+    margin: 0 20px;
+  }
+  .contactCont .contL h2 {
+    margin-left: 8%;
+    font-size: 40px;
+  }
+  .contactCont .contR {
+    margin: 0;
+  }
+  .contactCont .contR img {
+    width: 30px;
+  }
+  .contactCont .contR .social {
+    margin: 5% 0 0 5%;
   }
   .contactCont .contR .social .soc p {
     font-size: 20px;

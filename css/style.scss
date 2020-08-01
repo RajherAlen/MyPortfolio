@@ -121,9 +121,8 @@ header {
     }
   }
   img {
-    max-width: 500px;
+    width: 400px;
     margin-left: 100px;
-
     opacity: 0.6;
     animation-duration: 3.5s;
     animation-name: slideinR;
@@ -205,7 +204,7 @@ header {
     }
     img {
       width: 350px;
-      height: 250px;
+      max-height: 250px;
       transition: 0.6s;
 
       &:hover {
@@ -319,8 +318,8 @@ header {
   .content {
     padding-top: 27%;
     img {
-      margin: 140px 0 0 0;
-      width: 400px;
+      margin: 14px 0 0 0;
+      width: 350px;
     }
     h2 {
       top: 20%;
@@ -343,11 +342,13 @@ header {
       left: 8%;
     }
     .project {
-      padding-top: 180px;
+      padding-top: 120px;
       text-align: center;
+      h4 {
+        font-size: 30px;
+      }
       img {
-        width: 170px;
-        max-height: 350px;
+        width: 250px;
       }
     }
   }
@@ -359,12 +360,15 @@ header {
     }
     .contL {
       h2 {
-        margin-top: 100px;
-        font-size: 60px;
+        margin-top: 140px;
+        font-size: 50px;
+      }
+      form {
+        margin-left: -10px;
       }
     }
     .contR {
-      margin: 140px 0 0 70px;
+      margin: 140px 20px 0 20px;
       img {
         width: 35px;
       }
@@ -387,7 +391,7 @@ header {
     }
 
     to {
-      width: 400px;
+      max-width: 400px;
     }
   }
 }
@@ -404,8 +408,8 @@ header {
       width: 400px;
     }
     h2 {
-      font-size: 105px;
-      top: 35%;
+      font-size: 100px;
+      top: 7%;
       left: 8%;
     }
     .boxL {
@@ -437,21 +441,22 @@ header {
 
   ////////////////////////////CONTACT
   .contactCont {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
 
+    width: 100%;
+    margin: 0 auto;
     h1 {
       margin: 0;
       top: 200%;
-      left: 8%;
       font-size: 105px;
     }
     .contL {
       padding: 0;
-      margin: 0 0 0 18%;
+      margin: 0 0 0 25%;
       h2 {
         margin-left: 8%;
-        font-size: 60px;
+        font-size: 40px;
       }
     }
     .contR {
@@ -460,7 +465,110 @@ header {
         width: 30px;
       }
       .social {
-        margin: 5% 0 0 35%;
+        margin: 5% 0 0 25%;
+        .soc {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  ////////////////////////////ABOUT ME
+
+  .navigation {
+    .gitHub {
+      display: none;
+    }
+    h3 {
+      font-size: 22px;
+      margin-left: -30px;
+    }
+    nav {
+      margin-left: -30px;
+      li a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .content {
+    width: 100vw;
+    padding-top: 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    img {
+      margin: auto;
+      width: 330px;
+    }
+    h2 {
+      font-size: 90px;
+      top: 3%;
+      left: 8%;
+    }
+    .boxL {
+      width: 350px;
+      padding-right: 20px;
+      h1 {
+        font-size: 25px;
+        strong {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  ////////////////////////////MY WORK
+  .workCont {
+    min-height: 1600px;
+    h2 {
+      left: 8%;
+      font-size: 90px;
+      width: 80%;
+    }
+    .project {
+      padding-top: 180px;
+      text-align: center;
+      grid-template-columns: repeat(1, 1fr);
+      padding-top: 220px;
+      img {
+        width: 330px;
+        max-height: 340px;
+      }
+    }
+  }
+
+  ////////////////////////////CONTACT
+  .contactCont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    h1 {
+      margin: 0;
+      top: 310%;
+      width: 90vw;
+      font-size: 57px;
+    }
+    .contL {
+      padding: 0;
+      margin: 0 20px;
+      h2 {
+        margin-left: 8%;
+        font-size: 40px;
+      }
+    }
+    .contR {
+      margin: 0;
+      img {
+        width: 30px;
+      }
+      .social {
+        margin: 5% 0 0 5%;
         .soc {
           p {
             font-size: 20px;
