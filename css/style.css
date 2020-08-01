@@ -274,7 +274,7 @@ header .navigation ul a:hover::after {
 
 .workCont .project img {
   width: 350px;
-  max-height: 250px;
+  height: 250px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
