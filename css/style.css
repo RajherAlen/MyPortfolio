@@ -733,7 +733,7 @@ header .navigation ul a:hover::after {
     width: 300px;
     -o-object-fit: contain;
        object-fit: contain;
-    margin-top: -100px;
+    margin-top: -60px;
   }
   .content h2 {
     font-size: 70px;
@@ -754,7 +754,7 @@ header .navigation ul a:hover::after {
     font-size: 30px;
   }
   .workCont {
-    min-height: 1400px;
+    min-height: 1600px;
   }
   .workCont h2 {
     left: 8%;
