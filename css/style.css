@@ -258,71 +258,31 @@ header .navigation ul a:hover::after {
   z-index: 1;
   width: 80%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .workCont .project h4 {
   font-size: 40px;
   font-family: "Oswald", sans-serif;
   color: #353535;
-  margin-bottom: 15px;
+  margin: 35px 0 15px 0;
 }
 
 .workCont .project img {
-  width: 250px;
+  width: 350px;
+  height: 250px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
-.workCont .project .pro1 {
-  width: 300px;
-}
-
-.workCont .project .pro1 img {
-  height: 500px;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.workCont .project .pro1 img:hover {
+.workCont .project img:hover {
   opacity: 0.8;
-  height: 520px;
-  width: 270px;
-}
-
-.workCont .project .pro2 {
-  width: 300px;
-}
-
-.workCont .project .pro2 img {
-  height: 520px;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.workCont .project .pro2 img:hover {
-  opacity: 0.8;
-  width: 270px;
-  height: 540px;
-}
-
-.workCont .project .pro3 {
-  width: 300px;
-}
-
-.workCont .project .pro3 img {
-  height: 540px;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.workCont .project .pro3 img:hover {
-  opacity: 0.8;
-  height: 560px;
-  width: 270px;
+  width: 380px;
+  height: 280px;
 }
 
 .contactCont {
@@ -350,7 +310,7 @@ header .navigation ul a:hover::after {
 
 .contactCont .contL {
   margin-top: 20%;
-  margin-left: 10%;
+  margin-left: 18%;
   z-index: 2;
 }
 
@@ -391,13 +351,13 @@ header .navigation ul a:hover::after {
   border: none;
   font-size: 18px;
   border-radius: 25px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   cursor: pointer;
 }
 
 .contactCont .contL form button:hover {
-  width: 440px;
+  width: 410px;
 }
 
 .contactCont .contL form textarea {
