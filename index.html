@@ -92,15 +92,15 @@
       <div class="contL">
         <h2>Let's have a chat!</h2>
         <form>
-          <input type="text" placeholder="Enter your first name" />
+          <input type="text" placeholder="Enter your first name" id="subject" />
           <input
             type="email"
             placeholder="Enter your e-mail"
             required
-            class="user_email"
+            id="email"
           />
           <textarea
-            class="user_text"
+            id="text"
             cols="30"
             rows="10"
             placeholder="Type your message here"
@@ -133,5 +133,25 @@
 
     <!--SCRIPT-->
     <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $("form").on("submit", (e) => {
+        e.preventDefault();
+
+        const email = $("#email").val().trim();
+        const subject = $("#subject").val().trim();
+        const text = $("#text").val().trim();
+
+        const data = {
+          email,
+          subject,
+          text,
+        };
+
+        $.post("/email", data, function () {
+          console.log("Server recieved our data");
+        });
+      });
+    </script>
   </body>
 </html>
