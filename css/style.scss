@@ -167,7 +167,7 @@ header {
 
 ////////////////////////////////////////////////////MY WORK
 .workCont {
-  height: 100vh;
+  min-height: 100vh;
 
   background: linear-gradient(
     177deg,
@@ -187,7 +187,6 @@ header {
   }
   .project {
     padding-top: 5%;
-    position: relative;
     height: 400px;
     z-index: 1;
     width: 80%;
@@ -211,103 +210,6 @@ header {
         opacity: 0.8;
         width: 380px;
         height: 280px;
-      }
-    }
-  }
-}
-
-////////////////////////////////////////////////////CONTACT
-.contactCont {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
-  background-color: rgb(51, 48, 48);
-  h1 {
-    width: fit-content;
-    color: #ebebeb;
-    position: absolute;
-    z-index: 0;
-    top: 210%;
-    right: 25%;
-    opacity: 0.3;
-    font-size: 135px;
-    letter-spacing: 15px;
-  }
-  .contL {
-    margin-top: 20%;
-    margin-left: 18%;
-    z-index: 2;
-    h2 {
-      font-size: 80px;
-
-      color: #2dd690;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      margin-top: 30px;
-      margin-left: 11%;
-      input {
-        font-family: "Montserrat", sans-serif;
-        text-align: center;
-        font-size: 16px;
-        height: 30px;
-        width: 400px;
-        margin-bottom: 20px;
-        border-radius: 25px;
-        background-color: #353535;
-        border: 1px solid #2dd690;
-        color: #ffffff;
-      }
-      button {
-        width: 400px;
-        height: 50px;
-        background-color: #2dd690;
-        border: none;
-        font-size: 18px;
-        border-radius: 25px;
-        transition: 0.6s;
-        cursor: pointer;
-        &:hover {
-          width: 410px;
-        }
-      }
-      textarea {
-        width: 400px;
-        background-color: #353535;
-        border: 1px solid #2dd690;
-        margin-bottom: 20px;
-        font-size: 16px;
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
-        color: #ffffff;
-      }
-    }
-  }
-  .contR {
-    img {
-      width: 50px;
-      margin: 15px 0;
-      transition: all 0.4s;
-      &:hover {
-        opacity: 0.6;
-        width: 53px;
-      }
-    }
-    .social {
-      margin-top: 33%;
-      display: flex;
-      flex-direction: column;
-      .soc {
-        display: flex;
-        align-items: center;
-        p {
-          margin-left: 35px;
-          font-size: 27px;
-          color: #f0f0f0;
-          border-bottom: 1px solid #cac9c9;
-          letter-spacing: 4px;
-        }
       }
     }
   }
@@ -350,35 +252,6 @@ header {
       }
       img {
         width: 250px;
-      }
-    }
-  }
-
-  ////////////////////////////CONTACT
-  .contactCont {
-    h1 {
-      left: 8%;
-    }
-    .contL {
-      h2 {
-        margin-top: 140px;
-        font-size: 50px;
-      }
-      form {
-        margin-left: -10px;
-      }
-    }
-    .contR {
-      margin: 140px 20px 0 20px;
-      img {
-        width: 35px;
-      }
-    }
-    .social {
-      .soc {
-        p {
-          font-size: 25px;
-        }
       }
     }
   }
@@ -433,181 +306,93 @@ header {
     .project {
       padding-top: 180px;
       text-align: center;
+      grid-template-columns: repeat(2, 1fr);
       img {
-        width: 150px;
-        max-height: 340px;
+        width: 270px;
+        max-height: 200px;
       }
     }
   }
 
-  ////////////////////////////CONTACT
-  .contactCont {
-    display: flex;
-    flex-direction: column;
+  @media only screen and (max-width: 428px) {
+    ////////////////////////////ABOUT ME
 
-    width: 100%;
-    margin: 0 auto;
-    h1 {
-      margin: 0;
-      top: 200%;
-      font-size: 105px;
-    }
-    .contL {
-      padding: 0;
-      margin: 0 0 0 25%;
-      h2 {
-        margin-left: 8%;
-        font-size: 40px;
+    .navigation {
+      .gitHub {
+        position: absolute;
+        top: 20%;
+        right: -4%;
+        img {
+          width: 20px;
+        }
       }
-    }
-    .contR {
-      margin: 0;
-      img {
-        width: 30px;
+      h3 {
+        font-size: 20px;
+        margin-left: -30px;
       }
-      .social {
-        margin: 5% 0 0 25%;
-        .soc {
-          p {
-            font-size: 20px;
-          }
+      nav {
+        position: absolute;
+        top: 5px;
+        margin-left: 30px;
+        li a {
+          font-size: 13px;
+          margin: 0 10px;
         }
       }
     }
-  }
-}
 
-@media only screen and (max-width: 428px) {
-  ////////////////////////////ABOUT ME
+    .content {
+      width: 100vw;
+      padding-top: 30%;
+      display: grid;
+      grid-template-columns: 1fr;
 
-  .navigation {
-    .gitHub {
-      position: absolute;
-      top: 20%;
-      right: -4%;
       img {
-        width: 20px;
-      }
-    }
-    h3 {
-      font-size: 20px;
-      margin-left: -30px;
-    }
-    nav {
-      position: absolute;
-      top: 5px;
-      margin-left: 30px;
-      li a {
-        font-size: 13px;
-        margin: 0 10px;
-      }
-    }
-  }
-
-  .content {
-    width: 100vw;
-    padding-top: 30%;
-    display: grid;
-    grid-template-columns: 1fr;
-
-    img {
-      margin-left: -10px;
-      width: 300px;
-      object-fit: contain;
-      margin-top: -60px;
-    }
-    h2 {
-      font-size: 70px;
-      top: 3%;
-      left: 3%;
-    }
-    .boxL {
-      width: 400px;
-      padding-right: 30px;
-      p {
         margin-left: -10px;
-      }
-      h1 {
-        font-size: 26px;
-        strong {
-          font-size: 30px;
-        }
-      }
-    }
-  }
-
-  ////////////////////////////MY WORK
-  .workCont {
-    min-height: 1800px;
-
-    h2 {
-      left: 8%;
-      font-size: 70px;
-      width: 80%;
-    }
-    .project {
-      padding-top: 180px;
-      text-align: center;
-      width: 100%;
-      margin: auto;
-      grid-template-columns: repeat(1, 1fr);
-      padding-top: 170px;
-
-      img {
-        width: 350px;
+        width: 300px;
         object-fit: contain;
+        margin-top: -60px;
       }
-    }
-  }
-
-  ////////////////////////////CONTACT
-  .contactCont {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    h1 {
-      top: 312%;
-      width: 90vw;
-      font-size: 57px;
-    }
-    .contL {
-      padding: 0;
-      margin: 0 20px;
-      margin-left: 10%;
-      max-width: 100vw;
       h2 {
-        margin-left: 20%;
-        font-size: 30px;
+        font-size: 70px;
+        top: 3%;
+        left: 3%;
       }
-      form {
-        width: 350px;
-        input {
-          width: 350px;
+      .boxL {
+        width: 400px;
+        padding-right: 30px;
+        p {
+          margin-left: -10px;
         }
-        button {
-          width: 350px;
-        }
-        textarea {
-          width: 350px;
+        h1 {
+          font-size: 26px;
+          strong {
+            font-size: 30px;
+          }
         }
       }
     }
-    .contR {
-      margin: 0;
-      img {
-        width: 20px;
-      }
-      .social {
-        margin: 5% 0 0 20%;
-        display: flex;
-        align-items: flex-start;
 
-        .soc {
-          p {
-            margin-left: 10px;
-            font-size: 15px;
-          }
+    ////////////////////////////MY WORK
+    .workCont {
+      min-height: 1800px;
+
+      h2 {
+        left: 8%;
+        font-size: 70px;
+        width: 80%;
+      }
+      .project {
+        padding-top: 180px;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 170px;
+
+        img {
+          width: 350px;
+          object-fit: contain;
         }
       }
     }
@@ -694,60 +479,6 @@ header {
         width: 320px;
         max-height: 340px;
         object-fit: contain;
-      }
-    }
-  }
-
-  ////////////////////////////CONTACT
-  .contactCont {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    h1 {
-      top: 280%;
-      width: 90vw;
-      font-size: 45px;
-    }
-    .contL {
-      padding: 0;
-      margin: 0 20px;
-      margin-left: 10%;
-      max-width: 100vw;
-      h2 {
-        margin-left: 15%;
-        font-size: 30px;
-      }
-      form {
-        margin-left: 0px;
-        width: 340px;
-        input {
-          width: 300px;
-        }
-        button {
-          width: 300px;
-        }
-        textarea {
-          width: 300px;
-        }
-      }
-    }
-    .contR {
-      margin: 0;
-      img {
-        width: 20px;
-      }
-      .social {
-        margin: 5% 0 0 10%;
-        display: flex;
-        align-items: flex-start;
-
-        .soc {
-          p {
-            margin-left: 10px;
-            font-size: 15px;
-          }
-        }
       }
     }
   }

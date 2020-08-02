@@ -233,7 +233,7 @@ header .navigation ul a:hover::after {
 }
 
 .workCont {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(177deg, #c9c9c9 0%, white 100%);
 }
 
@@ -253,7 +253,6 @@ header .navigation ul a:hover::after {
 
 .workCont .project {
   padding-top: 5%;
-  position: relative;
   height: 400px;
   z-index: 1;
   width: 80%;
@@ -283,132 +282,6 @@ header .navigation ul a:hover::after {
   opacity: 0.8;
   width: 380px;
   height: 280px;
-}
-
-.contactCont {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
-  background-color: #333030;
-}
-
-.contactCont h1 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: #ebebeb;
-  position: absolute;
-  z-index: 0;
-  top: 210%;
-  right: 25%;
-  opacity: 0.3;
-  font-size: 135px;
-  letter-spacing: 15px;
-}
-
-.contactCont .contL {
-  margin-top: 20%;
-  margin-left: 18%;
-  z-index: 2;
-}
-
-.contactCont .contL h2 {
-  font-size: 80px;
-  color: #2dd690;
-}
-
-.contactCont .contL form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 30px;
-  margin-left: 11%;
-}
-
-.contactCont .contL form input {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  font-size: 16px;
-  height: 30px;
-  width: 400px;
-  margin-bottom: 20px;
-  border-radius: 25px;
-  background-color: #353535;
-  border: 1px solid #2dd690;
-  color: #ffffff;
-}
-
-.contactCont .contL form button {
-  width: 400px;
-  height: 50px;
-  background-color: #2dd690;
-  border: none;
-  font-size: 18px;
-  border-radius: 25px;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  cursor: pointer;
-}
-
-.contactCont .contL form button:hover {
-  width: 410px;
-}
-
-.contactCont .contL form textarea {
-  width: 400px;
-  background-color: #353535;
-  border: 1px solid #2dd690;
-  margin-bottom: 20px;
-  font-size: 16px;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
-}
-
-.contactCont .contR img {
-  width: 50px;
-  margin: 15px 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.contactCont .contR img:hover {
-  opacity: 0.6;
-  width: 53px;
-}
-
-.contactCont .contR .social {
-  margin-top: 33%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.contactCont .contR .social .soc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contactCont .contR .social .soc p {
-  margin-left: 35px;
-  font-size: 27px;
-  color: #f0f0f0;
-  border-bottom: 1px solid #cac9c9;
-  letter-spacing: 4px;
 }
 
 @media only screen and (max-width: 1240px) {
@@ -444,25 +317,6 @@ header .navigation ul a:hover::after {
   }
   .workCont .project img {
     width: 250px;
-  }
-  .contactCont h1 {
-    left: 8%;
-  }
-  .contactCont .contL h2 {
-    margin-top: 140px;
-    font-size: 50px;
-  }
-  .contactCont .contL form {
-    margin-left: -10px;
-  }
-  .contactCont .contR {
-    margin: 140px 20px 0 20px;
-  }
-  .contactCont .contR img {
-    width: 35px;
-  }
-  .contactCont .social .soc p {
-    font-size: 25px;
   }
   @-webkit-keyframes slideinR {
     from {
@@ -519,50 +373,16 @@ header .navigation ul a:hover::after {
   .workCont .project {
     padding-top: 180px;
     text-align: center;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .workCont .project img {
-    width: 150px;
-    max-height: 340px;
-  }
-  .contactCont {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .contactCont h1 {
-    margin: 0;
-    top: 200%;
-    font-size: 105px;
-  }
-  .contactCont .contL {
-    padding: 0;
-    margin: 0 0 0 25%;
-  }
-  .contactCont .contL h2 {
-    margin-left: 8%;
-    font-size: 40px;
-  }
-  .contactCont .contR {
-    margin: 0;
-  }
-  .contactCont .contR img {
-    width: 30px;
-  }
-  .contactCont .contR .social {
-    margin: 5% 0 0 25%;
-  }
-  .contactCont .contR .social .soc p {
-    font-size: 20px;
+    width: 270px;
+    max-height: 200px;
   }
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 768px) and (max-width: 428px) {
   .navigation .gitHub {
     position: absolute;
     top: 20%;
@@ -638,63 +458,6 @@ header .navigation ul a:hover::after {
     width: 350px;
     -o-object-fit: contain;
        object-fit: contain;
-  }
-  .contactCont {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .contactCont h1 {
-    top: 312%;
-    width: 90vw;
-    font-size: 57px;
-  }
-  .contactCont .contL {
-    padding: 0;
-    margin: 0 20px;
-    margin-left: 10%;
-    max-width: 100vw;
-  }
-  .contactCont .contL h2 {
-    margin-left: 20%;
-    font-size: 30px;
-  }
-  .contactCont .contL form {
-    width: 350px;
-  }
-  .contactCont .contL form input {
-    width: 350px;
-  }
-  .contactCont .contL form button {
-    width: 350px;
-  }
-  .contactCont .contL form textarea {
-    width: 350px;
-  }
-  .contactCont .contR {
-    margin: 0;
-  }
-  .contactCont .contR img {
-    width: 20px;
-  }
-  .contactCont .contR .social {
-    margin: 5% 0 0 20%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .contactCont .contR .social .soc p {
-    margin-left: 10px;
-    font-size: 15px;
   }
 }
 
@@ -775,64 +538,6 @@ header .navigation ul a:hover::after {
     max-height: 340px;
     -o-object-fit: contain;
        object-fit: contain;
-  }
-  .contactCont {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .contactCont h1 {
-    top: 280%;
-    width: 90vw;
-    font-size: 45px;
-  }
-  .contactCont .contL {
-    padding: 0;
-    margin: 0 20px;
-    margin-left: 10%;
-    max-width: 100vw;
-  }
-  .contactCont .contL h2 {
-    margin-left: 15%;
-    font-size: 30px;
-  }
-  .contactCont .contL form {
-    margin-left: 0px;
-    width: 340px;
-  }
-  .contactCont .contL form input {
-    width: 300px;
-  }
-  .contactCont .contL form button {
-    width: 300px;
-  }
-  .contactCont .contL form textarea {
-    width: 300px;
-  }
-  .contactCont .contR {
-    margin: 0;
-  }
-  .contactCont .contR img {
-    width: 20px;
-  }
-  .contactCont .contR .social {
-    margin: 5% 0 0 10%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .contactCont .contR .social .soc p {
-    margin-left: 10px;
-    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
