@@ -74,36 +74,31 @@
           /></a>
         </div>
         <div>
+          <h4>Instagram clone</h4>
+          <a href="https://instagram-clone-dc18a.web.app/"
+            ><img src="./img/instagramClone.jpg" alt=""
+          /></a>
+        </div>
+        <div>
           <h4>V.B. profil</h4>
           <a href="https://www.vbprofil.hr/"
             ><img src="./img/pro4.jpg" alt=""
           /></a>
         </div>
       </div>
-      <h2>MY WORK</h2>
+      </div>
+      
     </div>
 
+    <!-- <div class="contact">
+      <form action="POST" data-netlify="true">
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <textarea name="message" cols="30" rows="10"></textarea>
+        <button type="submit">Send mail</button>
+      </form>
+    </div> -->
     <!--SCRIPT-->
     <script src="app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $("form").on("submit", (e) => {
-        e.preventDefault();
-
-        const email = $("#email").val().trim();
-        const subject = $("#subject").val().trim();
-        const text = $("#text").val().trim();
-
-        const data = {
-          email,
-          subject,
-          text,
-        };
-
-        $.post("/email", data, function () {
-          console.log("Server recieved our data");
-        });
-      });
-    </script>
   </body>
 </html>
