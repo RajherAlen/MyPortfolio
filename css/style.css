@@ -267,21 +267,22 @@ header .navigation ul a:hover::after {
 .workCont .project h4 {
   font-size: 40px;
   font-family: "Oswald", sans-serif;
-  color: #353535;
-  margin: 35px 0 15px 0;
+  color: #333030;
+  margin: 25px 0;
 }
 
 .workCont .project img {
   width: 350px;
   height: 250px;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 .workCont .project img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: 0.8;
-  width: 380px;
-  height: 280px;
 }
 
 @media only screen and (max-width: 1240px) {
@@ -309,7 +310,7 @@ header .navigation ul a:hover::after {
     left: 8%;
   }
   .workCont .project {
-    padding-top: 120px;
+    padding-top: 50px;
     text-align: center;
   }
   .workCont .project h4 {
@@ -371,7 +372,6 @@ header .navigation ul a:hover::after {
     font-size: 105px;
   }
   .workCont .project {
-    padding-top: 180px;
     text-align: center;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -446,7 +446,6 @@ header .navigation ul a:hover::after {
     width: 80%;
   }
   .workCont .project {
-    padding-top: 180px;
     text-align: center;
     width: 100%;
     margin: auto;
@@ -525,7 +524,6 @@ header .navigation ul a:hover::after {
     width: 80%;
   }
   .workCont .project {
-    padding-top: 180px;
     text-align: center;
     width: 100%;
     margin: auto;
